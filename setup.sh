@@ -35,6 +35,14 @@ if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
     apt update && apt install terraform
 fi
 
+# INSTALL DOCKER
+
+printf "Would you like to install Docker? [Y/n] "
+read opt
+if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
+    apt install -y docker.io
+fi
+
 # CONFIGURE GIT
 
 printf "Would you like to configure git? [Y/n] "
