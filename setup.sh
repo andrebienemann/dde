@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# INSTALL C/C++
+
+printf "Would you like to install gcc? [Y/n] "
+read opt
+if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
+    apt install -y gcc
+fi
+
 # INSTALL PYTHON
 
 printf "Would you like to install Python? [Y/n] "
