@@ -1,11 +1,14 @@
 FROM debian:bookworm as base
 
 RUN apt update && apt -y upgrade
-RUN apt install -y software-properties-common gnupg ca-certificates
-RUN apt install -y htop make git vim nano curl wget zsh cntlm jq zip unzip
+RUN apt install -y ca-certificates cntlm
+RUN apt install -y curl wget jq zip unzip
+RUN apt install -y make git vim nano man
+RUN apt install -y htop
 
 FROM base AS zsh
 
+RUN apt install -y zsh
 RUN chsh -s $(which zsh)
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
