@@ -6,9 +6,19 @@ if [ $# -eq 0 ]; then
         setup-python
     fi
 
+    printf "Would you like to set up Assembly? [Y/n] "; read opt
+    if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
+        setup-asm
+    fi
+
     printf "Would you like to set up C? [Y/n] "; read opt
     if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
         setup-c
+    fi
+
+    printf "Would you like to set up CPP? [Y/n] "; read opt
+    if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
+        setup-cpp
     fi
 
     printf "Would you like to set up Node? [Y/n] "; read opt
