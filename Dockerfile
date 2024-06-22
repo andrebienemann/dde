@@ -2,7 +2,7 @@ FROM debian:bookworm as base
 
 RUN apt update && apt -y upgrade
 RUN apt install -y ca-certificates cntlm
-RUN apt install -y curl wget jq zip unzip
+RUN apt install -y curl wget jq zip unzip gpg
 RUN apt install -y make git vim nano man
 RUN apt install -y htop
 
