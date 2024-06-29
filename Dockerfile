@@ -28,6 +28,7 @@ COPY scripts/configure.sh /usr/local/etc/scripts/configure
 
 COPY scripts/setup-asm.sh /usr/local/etc/scripts/setup-asm
 COPY scripts/setup-aws.sh /usr/local/etc/scripts/setup-aws
+COPY scripts/setup-buildx.sh /usr/local/etc/scripts/setup-buildx
 COPY scripts/setup-c.sh /usr/local/etc/scripts/setup-c
 COPY scripts/setup-cpp.sh /usr/local/etc/scripts/setup-cpp
 COPY scripts/setup-docker.sh /usr/local/etc/scripts/setup-docker

@@ -36,7 +36,7 @@ if [ $# -eq 0 ]; then
         setup-docker
     fi
 
-    printf "Would you like to set up buildx? [Y/n] "; read opt
+    printf "Would you like to set up Buildx? [Y/n] "; read opt
     if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
         setup-buildx
     fi
