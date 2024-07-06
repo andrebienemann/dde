@@ -41,9 +41,9 @@ if [ $# -eq 0 ]; then
         setup-buildx
     fi
 
-    printf "Would you like to set up Kubernetes? [Y/n] "; read opt
+    printf "Would you like to set up Kubectl? [Y/n] "; read opt
     if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
-        setup-kubernetes
+        setup-kubectl
     fi
 
     printf "Would you like to set up Helm? [Y/n] "; read opt

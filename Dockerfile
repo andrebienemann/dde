@@ -34,7 +34,7 @@ COPY scripts/setup-cpp.sh /usr/local/etc/scripts/setup-cpp
 COPY scripts/setup-docker.sh /usr/local/etc/scripts/setup-docker
 COPY scripts/setup-go.sh /usr/local/etc/scripts/setup-go
 COPY scripts/setup-helm.sh /usr/local/etc/scripts/setup-helm
-COPY scripts/setup-kubernetes.sh /usr/local/etc/scripts/setup-kubernetes
+COPY scripts/setup-kubectl.sh /usr/local/etc/scripts/setup-kubectl
 COPY scripts/setup-node.sh /usr/local/etc/scripts/setup-node
 COPY scripts/setup-packer.sh /usr/local/etc/scripts/setup-packer
 COPY scripts/setup-python.sh /usr/local/etc/scripts/setup-python
