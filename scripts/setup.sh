@@ -66,6 +66,11 @@ if [ $# -eq 0 ]; then
         setup-aws
     fi
 
+    printf "Would you like to set up EKS CLI? [Y/n] "; read opt
+    if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
+        setup-eks
+    fi
+
     printf "Would you like to set up SAM CLI? [Y/n] "; read opt
     if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
         setup-sam

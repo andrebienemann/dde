@@ -32,6 +32,7 @@ COPY scripts/setup-buildx.sh /usr/local/etc/scripts/setup-buildx
 COPY scripts/setup-c.sh /usr/local/etc/scripts/setup-c
 COPY scripts/setup-cpp.sh /usr/local/etc/scripts/setup-cpp
 COPY scripts/setup-docker.sh /usr/local/etc/scripts/setup-docker
+COPY scripts/setup-eks.sh /usr/local/etc/scripts/setup-eks
 COPY scripts/setup-go.sh /usr/local/etc/scripts/setup-go
 COPY scripts/setup-helm.sh /usr/local/etc/scripts/setup-helm
 COPY scripts/setup-kubectl.sh /usr/local/etc/scripts/setup-kubectl
