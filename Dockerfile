@@ -38,6 +38,7 @@ COPY scripts/setup-kubectl.sh /usr/local/etc/scripts/setup-kubectl
 COPY scripts/setup-node.sh /usr/local/etc/scripts/setup-node
 COPY scripts/setup-packer.sh /usr/local/etc/scripts/setup-packer
 COPY scripts/setup-python.sh /usr/local/etc/scripts/setup-python
+COPY scripts/setup-sam.sh /usr/local/etc/scripts/setup-sam
 COPY scripts/setup-terraform.sh /usr/local/etc/scripts/setup-terraform
 COPY scripts/setup.sh /usr/local/etc/scripts/setup
 

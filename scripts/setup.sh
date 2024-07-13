@@ -65,6 +65,11 @@ if [ $# -eq 0 ]; then
     if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
         setup-aws
     fi
+
+    printf "Would you like to set up SAM CLI? [Y/n] "; read opt
+    if [[ $opt = "" ]] || [[ $opt = "y" ]] || [[ $opt = "Y" ]]; then
+        setup-sam
+    fi
 else
     for arg in "$@"; do
         eval "setup-$arg"
